@@ -95,4 +95,4 @@ app.get('/favicon.ico', function(req, res) {
    });
 
    
-server.listen(3001, function(){ console.log('Node server listening on port 3001');});
+server.listen(process.env.PORT || 3001, function(){ console.log('Node server listening on port 3001');});
