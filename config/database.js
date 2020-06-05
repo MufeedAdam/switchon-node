@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-const mongoDB = 'mongodb://localhost:27017';
+
+const uri = "mongodb+srv://mufeed:mufeed@cluster0-xn3ih.mongodb.net/test?retryWrites=true&w=majority";
+const mongoDB = uri;
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 module.exports = mongoose;
