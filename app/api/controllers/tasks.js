@@ -164,6 +164,7 @@ getByDepartment: function(req, res, next) {
          
        tasksList.push({task:task.task,id: task._id, name_from: task.name_from, name_to: task.name_to, department_to: task.department_to,department_from: task.department_from,date_on :task.date_on,approve:task.approve,pending:task.pending});
       }
+      
       res.json({status:"success", message: "tasks list found!!!", data:{tasks: tasksList}});
          
      }
